@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantinho da Sofia</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    <div class="foto">
+        <img src="foto.jpeg">
+        
+    </div>
+    
+    <h1>Cantinho da Lucy Sofia</h1>
+    <p class="sobre">
+  Sobre mim:
+  <span id="pontos">...</span>
+  <span id="mais" style="display:none;"><br>Nome: Lucy Sofia Andreoli Ortiz<br>Idade: 25 anos<br>Hobbies: Videogames retro e series
+    <br>Cursando ciência da computação<br>Entusiasta de trilhas sonoras<br>Maior fã de Megaman do rio grande do sul<br>Sonho: desenvolver um jogo</span>
+    </p>
+
+<button onclick="lerMais()" id="btnLer">Leia mais</button>
+<div class="meus_links">
+<p>
+  Meus links:
+  <span id="pontos2"></span>
+  <span id="mais2" style="display:none;"><a class="git_link" href="https://github.com/LuSofiaOrtiz">
+    GitHub
+  </a>
+  <a class="insta_link" href="https://www.instagram.com/lucysaortiz/">
+    Instagram
+  </a>
+  <a class="steam_link" href="https://steamcommunity.com/id/SofiaSofunny/">
+    Steam
+  </a>
+  </span>
+</p>
+<button onclick="lerMais2()" id="btnLer2">Ver links</button>
+</div>
+<h2>Jogo favorito</h2>
+<iframe class="MegamanX5" src="https://www.retrogames.cc/embed/40779-mega-man-x5.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+<script>
+function lerMais() {
+  // Busca os elementos pelo ID
+  var pontos = document.getElementById("pontos");
+  var maisTexto = document.getElementById("mais");
+  var btnText = document.getElementById("btnLer");
+
+  // Alterna a exibição
+  if (pontos.style.display === "none") {
+    pontos.style.display = "inline";
+    btnText.innerHTML = "Leia mais";
+    maisTexto.style.display = "none";
+  } else {
+    pontos.style.display = "none";
+    btnText.innerHTML = "Leia menos";
+    maisTexto.style.display = "inline";
+  }
+}
+function lerMais2() {
+  // Busca os elementos pelo ID
+  var pontos2 = document.getElementById("pontos2");
+  var maisTexto2 = document.getElementById("mais2");
+  var btnText2 = document.getElementById("btnLer2");
+
+  // Alterna a exibição
+  if (pontos2.style.display === "none") {
+    pontos2.style.display = "inline";
+    btnText2.innerHTML = "Ver links";
+    maisTexto2.style.display = "none";
+  } else {
+    pontos2.style.display = "none";
+    btnText2.innerHTML = "Leia menos";
+    maisTexto2.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>

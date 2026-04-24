@@ -1,0 +1,114 @@
+body{
+    background-image: url('background.jpg');
+    background-size: cover
+}
+
+
+h1{
+    position: absolute;
+    top: 15px;
+    max-width: 370px;
+    margin-left: 330px;
+    color: snow;
+    text-decoration: underline red;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed';
+}
+h2{
+    color:snow;
+    font-family: 'Roboto Condensed' ;
+    font-size: 30px;
+    position: relative;
+    left: 46%;
+    max-width: 200px;
+}
+p{
+    font-family: 'Roboto Condensed';
+    color: snow;
+    max-width: 250px;
+}
+.sobre{
+    font-size: 30px;
+}
+#btnLer{
+    position: absolute;
+    color: blue;
+    border: none;
+    background-color: gray;
+    top: 365px;
+    left: 150px;
+    
+}
+#btnLer:hover{
+    text-decoration: underline solid blue;
+}
+#btnLer2{
+    color: blue;
+    border: none;
+    background-color: gray;
+    font-size: large;
+}
+#btnLer2:hover{
+    text-decoration: underline solid blue;
+}
+.MegamanX5{
+    position: relative;
+    left: 35%;
+    max-width: 600px;
+}
+.meus_links{
+    position: absolute ;
+    margin-left: 35%;
+    margin-bottom: 95%;
+    top: 50px;
+    font-size: 40px ;
+    max-width: 400px;
+    max-height: auto;
+}
+.git_link{
+    color: snow;
+    text-decoration: none;
+}
+.git_link:hover{
+    text-decoration: underline snow;
+}
+.insta_link{
+    color: snow;
+    text-decoration: none;
+}
+.insta_link:hover{
+    text-decoration: underline snow;
+}
+.steam_link{
+    color: snow;
+    text-decoration: none;
+}
+.steam_link:hover{
+    text-decoration: underline snow;
+}
+#mais{
+    font-size: 25px;
+    position: absolute;
+    max-width: 400px;
+    max-height: 200px;
+    left: 8px;
+}
+
+.links{
+    color: snow;
+    
+}
+.foto{
+    max-width: 300px;
+    max-height: 300px;
+    border: 7px solid red;
+    border-radius: 10px;
+    
+}
+
+.foto img {
+    align-items: left;
+    height: 300px;
+    width: 300px;
+    
+}
