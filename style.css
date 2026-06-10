@@ -1,14 +1,28 @@
 body{
     background-image: url('background.jpg');
-    background-size: cover
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
-
-
+.col1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col3{
+    display: flex;
+    flex-direction: column;
+    border: 2dvh, transparent;
+    
+}
 h1{
-    position: absolute;
-    top: 15px;
-    max-width: 370px;
-    margin-left: 330px;
     color: snow;
     text-decoration: underline red;
     border-radius: 10px;
@@ -18,26 +32,23 @@ h2{
     color:snow;
     font-family: 'Roboto Condensed' ;
     font-size: 30px;
-    position: relative;
-    left: 46%;
-    max-width: 200px;
 }
 p{
     font-family: 'Roboto Condensed';
     color: snow;
-    max-width: 250px;
+    
 }
 .sobre{
     font-size: 30px;
+    max-width: fit-content;
 }
 #btnLer{
-    position: absolute;
     color: blue;
     border: none;
     background-color: gray;
-    top: 365px;
-    left: 150px;
-    
+    font-size: large;
+    max-width: fit-content;
+    max-height: fit-content;
 }
 #btnLer:hover{
     text-decoration: underline solid blue;
@@ -47,23 +58,18 @@ p{
     border: none;
     background-color: gray;
     font-size: large;
+    max-width: fit-content;
+    max-height: fit-content;
 }
 #btnLer2:hover{
     text-decoration: underline solid blue;
 }
 .MegamanX5{
-    position: relative;
-    left: 35%;
-    max-width: 600px;
+    min-width: 15dvh;
 }
 .meus_links{
-    position: absolute ;
-    margin-left: 35%;
-    margin-bottom: 95%;
-    top: 50px;
-    font-size: 40px ;
-    max-width: 400px;
-    max-height: auto;
+    font-size: 35px ;
+    
 }
 .git_link{
     color: snow;
@@ -88,27 +94,32 @@ p{
 }
 #mais{
     font-size: 25px;
-    position: absolute;
-    max-width: 400px;
-    max-height: 200px;
-    left: 8px;
+    
 }
+#mais2{
+    
+    flex-direction: column ;
 
+}
 .links{
     color: snow;
     
 }
 .foto{
-    max-width: 300px;
-    max-height: 300px;
+    max-height: 35dvh;
+    max-width: fit-content;
     border: 7px solid red;
     border-radius: 10px;
+    
     
 }
 
 .foto img {
-    align-items: left;
-    height: 300px;
-    width: 300px;
-    
+   max-height: 35dvh;
+   max-width: 35dvh;
+   
+}
+.segredo{
+    width: 33dvh;
+    color: transparent;
 }

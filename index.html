@@ -14,12 +14,13 @@
 
 </head>
 <body>
+  <div class="col1">
     <div class="foto">
         <img src="foto.jpeg">
         
     </div>
     
-    <h1>Cantinho da Lucy Sofia</h1>
+    
     <p class="sobre">
   Sobre mim:
   <span id="pontos">...</span>
@@ -28,25 +29,29 @@
     </p>
 
 <button onclick="lerMais()" id="btnLer">Leia mais</button>
-<div class="meus_links">
-<p>
+  </div>
+  <div class="col2">
+    <h1>Cantinho da Lucy Sofia</h1>
+    <div class="meus_links">
+      <p>
   Meus links:
   <span id="pontos2"></span>
   <span id="mais2" style="display:none;"><a class="git_link" href="https://github.com/LuSofiaOrtiz">
     GitHub
-  </a>
-  <a class="insta_link" href="https://www.instagram.com/lucysaortiz/">
+    </a>
+    <a class="insta_link" href="https://www.instagram.com/lucysaortiz/">
     Instagram
-  </a>
-  <a class="steam_link" href="https://steamcommunity.com/id/SofiaSofunny/">
+    </a>
+    <a class="steam_link" href="https://steamcommunity.com/id/SofiaSofunny/">
     Steam
-  </a>
-  </span>
-</p>
+    </a>
+    </span>
+      </p>
 <button onclick="lerMais2()" id="btnLer2">Ver links</button>
 </div>
 <h2>Jogo favorito</h2>
 <iframe class="MegamanX5" src="https://www.retrogames.cc/embed/40779-mega-man-x5.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+</div>
 <script>
 function lerMais() {
   // Busca os elementos pelo ID
@@ -79,9 +84,12 @@ function lerMais2() {
   } else {
     pontos2.style.display = "none";
     btnText2.innerHTML = "Leia menos";
-    maisTexto2.style.display = "inline";
+    maisTexto2.style.display = "flex";
   }
 }
 </script>
+<div class="col3">
+  <p class="segredo">Texto secreto</p>
+</div>
 </body>
 </html>
